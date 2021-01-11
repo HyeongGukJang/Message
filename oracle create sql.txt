@@ -1,0 +1,35 @@
+create table send_note(
+   seq          number(11) not null,
+   recv_id     varchar(20),
+   send_id     varchar(20),
+   content varchar(300) not null,
+   name    varchar(100) not null,
+   send_date varchar2(30)
+);
+
+create table recv_note(
+   seq          number(11) not null,
+   recv_id     varchar(20),
+   send_id     varchar(20),
+   content varchar(300) not null,
+   name    varchar(100) not null,
+   send_date varchar2(30)
+);
+
+create table USER1(
+id      varchar(20) primary key,
+name       varchar(20) not null,
+password  varchar(20) not null,
+nickname  varchar(20) not null,
+birthday  varchar(8),
+website  varchar(50),
+introduce  varchar(500),
+emailId  varchar(50) not null, 
+emailDomain  varchar(50) not null, 
+phoneStart  varchar(3) not null, 
+phoneCenter varchar(4) not null,
+phoneEnd varchar(4) not null,
+sex varchar(1),
+enableYn varchar(1),
+photoPath varchar(300)
+);

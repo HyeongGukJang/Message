@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="BoardVO" type="org.comstudy21.myweb.board.BoardVO"/>
+		<typeAlias alias="UserVO" type="org.comstudy21.myweb.user.UserVO"/>
+		<typeAlias alias="MessageVO" type="org.comstudy21.myweb.message.MessageVO"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="mappers/BoardMapper.xml" />
+		<mapper resource="mappers/UserMapper.xml" />
+		<mapper resource="mappers/MessageMapper.xml"/>
+	</mappers>
+</configuration>
